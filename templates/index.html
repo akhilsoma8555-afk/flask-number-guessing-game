@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='game_index.css') }}">
+</head>
+<body>
+    <h2 id="hello">👋 Welcome {{ name }}</h2>
+    <h1 id="h2">🤔Guess a Number (1-10)🔢</h1>
+    <form action="/play" method="POST"> 
+        <input type="number" name="guess" min="1" max="10" id="guess" required>
+        <button type="submit" id="b">Guess</button>
+        
+    </form>
+    {% if result %}
+        <h2 id="h3">{{ result }}</h2>
+    {% endif %}
+    <h2 id="score">Score: {{ score }}</h2>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("number_home.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(232, 225, 225);
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 60px;
+    margin: 100px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px red,
+                 0 0 20px red,
+                 0 0 30px red;
+}
+
+#name{
+    width: 300px;
+    height: 55px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+button{
+    display: block;
+    padding: 15px 30px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #1fda18;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300px;
+    height: 65px;
+    margin-top: 36px;
+    box-shadow: 0 0 20px rgba(0,255,0,0.6);
+}
+
+button:hover{
+    background-color: #170c0c;
+    transform: scale(1.08);
+}
